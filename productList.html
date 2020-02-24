@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mike's Store</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="header">
+            <h2 style="margin: 0% .2em;"><a href="index.html">The NJIT Bakery</a></h2>
+            <h4 style="margin: 0% 1.8em;"><a href="productList.html">Products</a></h4>
+        </div>
+        <div id="content">
+            <div id="filters">
+                <div>
+                    <label for="orderBy">Order By:</label>
+                    <select id="orderBy" onChange="orderCards(this)">
+                        <option value="name">Name</option>
+                        <option value="highLow">Price: High-Low</option>
+                        <option value="lowHigh">Price: Low-High</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="range">Price Range:</label>
+                    <select id="range" onChange="orderCards(this)">
+                        <option value="any">Any</option>
+                        <option value="5>">$5></option>
+                        <option value="5-10">$5-$10</option>
+                        <option value=">10">>$10</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="category">Category:</label>
+                    <select id="category" onChange="orderCards(this)">
+                        <option value="any">Any</option>
+                        <option value="food">Food</option>
+                        <option value="drink">Drink</option>
+                    </select>
+                </div>
+            </div>
+            <div id="products">
+            </div>
+            <div id="footer">
+                <div>
+                    <p>THE NJIT BAKERY</p>
+                </div>
+                <div>
+                    <p>(201)-555-0101</p>
+                </div>
+                <div>
+                    <p>80 Bleeker St</p>
+                    <p>Newark, NJ</p>
+                    <p>07103</p>
+                </div>
+            </div>
+        </div>
+        <script src="productList.js"></script>
+    </body>
+</html>

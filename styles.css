@@ -1,0 +1,121 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #8EB7E7;
+}
+
+#header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #ABB2B9;
+    padding: .75em;
+    border-bottom: 3px solid #566573;
+}
+
+#header a {
+    text-decoration: none;
+    color: black;
+}
+
+#header a:hover {
+    color: #1A95D3;
+}
+
+#content {
+    margin: .75em;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+#carousel {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    background: #ABB2B9;
+    border: 3px solid #566573;
+}
+
+#carousel img {
+    width: 80%;
+    display: none;
+}
+
+#carousel .active {
+    display: block;
+}
+
+#welcome {
+    margin: 1em;
+    border: 3px solid #566573;
+    padding: 1%
+}
+
+#filters {
+    padding: 1em;
+    display: flex;
+    background: #ABB2B9;
+    border-bottom: solid 2px #566573;
+}
+
+#filters div {
+    margin-right: 5%;
+}
+
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    flex-grow: 5;
+    margin: 1em;
+    border: 1px solid black;
+    max-width: 20%;
+    align-self: center;
+    background: #ABB2B9;
+}
+
+.card img {
+    width: 100%;
+    border-bottom: 2px solid #566573;
+}
+
+.card h4 {
+    margin: .5em;
+}
+
+#footer {
+    padding: 1%;
+    color: white;
+    background: #566573;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 1366px){
+    #content {
+        margin: 1em 25%;
+    }
+}
+
+@media only screen and (min-width: 1030px) and (max-width: 1366px){
+    #content {
+        margin: 1em 25%;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1030px){
+    #content {
+        margin: 1em 15%;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    #footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
